@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CRUD__MVC.Models.Customer>
+
+
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            FirstName
+        </th>
+
+        <th>
+            LastName
+        </th>
+
+
+    </tr>
+
+
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>
+                @emp.FirstName
+            </td>
+
+            <td>
+                @emp.LastName
+            </td>
+
+
+
+
+        </tr>
+    }
+
+</table>
